@@ -8,24 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		B864C7531FA0339400154448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7521FA0339400154448 /* AppDelegate.m */; };
-		B864C7561FA0339400154448 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7551FA0339400154448 /* ViewController.m */; };
-		B864C7591FA0339400154448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B864C7571FA0339400154448 /* Main.storyboard */; };
 		B864C75B1FA0339400154448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B864C75A1FA0339400154448 /* Assets.xcassets */; };
 		B864C75E1FA0339400154448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B864C75C1FA0339400154448 /* LaunchScreen.storyboard */; };
 		B864C7611FA0339400154448 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7601FA0339400154448 /* main.m */; };
+		B864C76D1FA0347100154448 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C76C1FA0347100154448 /* LoginViewController.m */; };
+		B864C7701FA0377D00154448 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C76F1FA0377D00154448 /* Router.m */; };
+		B864C7731FA042AE00154448 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7721FA042AE00154448 /* LoginViewModel.m */; };
+		B864C7791FA0646F00154448 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7781FA0646F00154448 /* MainTableViewController.m */; };
+		B864C77C1FA0648400154448 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C77B1FA0648400154448 /* UserViewModel.m */; };
+		B864C77F1FA0655300154448 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C77E1FA0655300154448 /* User.m */; };
+		B864C7831FA066DB00154448 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7811FA066DB00154448 /* UserTableViewCell.m */; };
+		B864C7841FA066DB00154448 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B864C7821FA066DB00154448 /* UserTableViewCell.xib */; };
+		B864C7891FA072B000154448 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7881FA072B000154448 /* DataService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B864C74E1FA0339400154448 /* MVVMR_LoginBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMR_LoginBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864C7511FA0339400154448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B864C7521FA0339400154448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B864C7541FA0339400154448 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B864C7551FA0339400154448 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B864C7581FA0339400154448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B864C75A1FA0339400154448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B864C75D1FA0339400154448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B864C75F1FA0339400154448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B864C7601FA0339400154448 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B864C76B1FA0347100154448 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B864C76C1FA0347100154448 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B864C76E1FA0377D00154448 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		B864C76F1FA0377D00154448 /* Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		B864C7711FA042AE00154448 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		B864C7721FA042AE00154448 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		B864C7771FA0646F00154448 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		B864C7781FA0646F00154448 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B864C77A1FA0648400154448 /* UserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		B864C77B1FA0648400154448 /* UserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		B864C77D1FA0655300154448 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B864C77E1FA0655300154448 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B864C7801FA066DB00154448 /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		B864C7811FA066DB00154448 /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		B864C7821FA066DB00154448 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		B864C7871FA072B000154448 /* DataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		B864C7881FA072B000154448 /* DataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +79,71 @@
 		B864C7501FA0339400154448 /* MVVMR_LoginBasic */ = {
 			isa = PBXGroup;
 			children = (
+				B864C7861FA0724000154448 /* Interactor */,
+				B864C76A1FA033E200154448 /* Router */,
+				B864C7691FA033DB00154448 /* ViewModels */,
+				B864C7681FA033D400154448 /* Views */,
+				B864C7671FA033C900154448 /* Models */,
 				B864C7511FA0339400154448 /* AppDelegate.h */,
 				B864C7521FA0339400154448 /* AppDelegate.m */,
-				B864C7541FA0339400154448 /* ViewController.h */,
-				B864C7551FA0339400154448 /* ViewController.m */,
-				B864C7571FA0339400154448 /* Main.storyboard */,
 				B864C75A1FA0339400154448 /* Assets.xcassets */,
 				B864C75C1FA0339400154448 /* LaunchScreen.storyboard */,
 				B864C75F1FA0339400154448 /* Info.plist */,
 				B864C7601FA0339400154448 /* main.m */,
 			);
 			path = MVVMR_LoginBasic;
+			sourceTree = "<group>";
+		};
+		B864C7671FA033C900154448 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B864C77D1FA0655300154448 /* User.h */,
+				B864C77E1FA0655300154448 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B864C7681FA033D400154448 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B864C76B1FA0347100154448 /* LoginViewController.h */,
+				B864C76C1FA0347100154448 /* LoginViewController.m */,
+				B864C7771FA0646F00154448 /* MainTableViewController.h */,
+				B864C7781FA0646F00154448 /* MainTableViewController.m */,
+				B864C7801FA066DB00154448 /* UserTableViewCell.h */,
+				B864C7811FA066DB00154448 /* UserTableViewCell.m */,
+				B864C7821FA066DB00154448 /* UserTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B864C7691FA033DB00154448 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B864C7711FA042AE00154448 /* LoginViewModel.h */,
+				B864C7721FA042AE00154448 /* LoginViewModel.m */,
+				B864C77A1FA0648400154448 /* UserViewModel.h */,
+				B864C77B1FA0648400154448 /* UserViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B864C76A1FA033E200154448 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B864C76E1FA0377D00154448 /* Router.h */,
+				B864C76F1FA0377D00154448 /* Router.m */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B864C7861FA0724000154448 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B864C7871FA072B000154448 /* DataService.h */,
+				B864C7881FA072B000154448 /* DataService.m */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,8 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B864C75E1FA0339400154448 /* LaunchScreen.storyboard in Resources */,
+				B864C7841FA066DB00154448 /* UserTableViewCell.xib in Resources */,
 				B864C75B1FA0339400154448 /* Assets.xcassets in Resources */,
-				B864C7591FA0339400154448 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,23 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B864C7561FA0339400154448 /* ViewController.m in Sources */,
+				B864C77F1FA0655300154448 /* User.m in Sources */,
+				B864C7891FA072B000154448 /* DataService.m in Sources */,
+				B864C77C1FA0648400154448 /* UserViewModel.m in Sources */,
+				B864C7831FA066DB00154448 /* UserTableViewCell.m in Sources */,
+				B864C7701FA0377D00154448 /* Router.m in Sources */,
 				B864C7611FA0339400154448 /* main.m in Sources */,
+				B864C7791FA0646F00154448 /* MainTableViewController.m in Sources */,
 				B864C7531FA0339400154448 /* AppDelegate.m in Sources */,
+				B864C7731FA042AE00154448 /* LoginViewModel.m in Sources */,
+				B864C76D1FA0347100154448 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B864C7571FA0339400154448 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B864C7581FA0339400154448 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B864C75C1FA0339400154448 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -279,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38D8VUK3CJ;
 				INFOPLIST_FILE = MVVMR_LoginBasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nick1ee.MVVMR-LoginBasic";
@@ -292,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38D8VUK3CJ;
 				INFOPLIST_FILE = MVVMR_LoginBasic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nick1ee.MVVMR-LoginBasic";
