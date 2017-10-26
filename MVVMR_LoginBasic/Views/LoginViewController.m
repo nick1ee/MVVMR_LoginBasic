@@ -33,15 +33,21 @@
     [self customizedUIComponents];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:true];
+    self.inputAccount.text = nil;
+    self.inputPassword.text = nil;
+}
+
 - (void)customizedUIComponents {
     self.title = @"Login Scene";
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer: tap];
     
     self.inputAccount = [UITextField new];
-    self.inputAccount.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.inputAccount.layer.borderWidth = 0.5;
+    self.inputAccount.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.inputAccount.layer.borderWidth = 1.0;
     self.inputAccount.placeholder = @"Account";
     
     [self.view addSubview:self.inputAccount];
@@ -53,9 +59,10 @@
     self.inputAccount.translatesAutoresizingMaskIntoConstraints = false;
     
     self.inputPassword = [UITextField new];
-    self.inputPassword.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.inputPassword.layer.borderWidth = 0.5;
+    self.inputPassword.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self.inputPassword.layer.borderWidth = 1.0;
     self.inputPassword.placeholder = @"Password";
+    self.inputPassword.textContentType = UITextContentTypePassword;
     
     [self.view addSubview:self.inputPassword];
     [self.inputPassword.topAnchor constraintEqualToAnchor:self.inputAccount.bottomAnchor constant:20.0].active = true;
@@ -66,7 +73,8 @@
     
     UIButton *loginButton = [UIButton new];
     [loginButton setTitle:@"Login" forState:UIControlStateNormal];
-    [loginButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [loginButton setBackgroundColor: [[UIColor alloc] initWithRed:22.0/255.0 green:154.0/255.0 blue:153.0/255.0 alpha:1.0]];
+    [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [loginButton addTarget:self action:@selector(didTapLoginButton) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:loginButton];
