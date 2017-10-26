@@ -11,7 +11,6 @@
 
 @interface AppDelegate ()
 
-// TODO: Could AppDelegate own a router?
 @property (strong, nonatomic) Router *router;
 
 @end
@@ -19,19 +18,12 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     UINavigationController *navigationController = [UINavigationController new];
-    
     self.window.rootViewController = navigationController;
-    
     self.router = [[Router alloc] initWithNavigation:navigationController];
-    
     [self.router start];
-    
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

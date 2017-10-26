@@ -10,11 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Router : NSObject
-
 - (instancetype)initWithNavigation: (UINavigationController *)inputNavigation;
-
 - (void)start;
-
 - (void)showNextPage: (bool) isLoggedIn;
-
 @end

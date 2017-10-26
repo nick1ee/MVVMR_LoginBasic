@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface LoginViewModel : NSObject
-
 - (bool)loginWithCredential:(NSString *)account
                    password:(NSString *)password;
 

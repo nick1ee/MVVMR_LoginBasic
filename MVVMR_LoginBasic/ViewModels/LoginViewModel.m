@@ -14,15 +14,10 @@ static NSString *const masterAccount = @"Nicklee";
 static NSString *const masterPassword = @"12345678";
 
 - (bool)loginWithCredential:(NSString *)account password:(NSString *)password {
-    
     if ([account isEqualToString:masterAccount] && [password isEqualToString:masterPassword]) {
-        
         return true;
-        
     }
-
     return false;
-    
 }
 
 @end

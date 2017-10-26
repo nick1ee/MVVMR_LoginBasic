@@ -11,27 +11,16 @@
 @implementation User
 
 + (NSArray *)initWithObjects:(NSDictionary *)inputObjects {
-    
     NSMutableArray *users = @[].mutableCopy;
-    
     for (NSDictionary *object in inputObjects) {
-        
         User *user = [User new];
-        
         user.userId = [object[@"userId"] integerValue];
-        
         user.defaultId = [object[@"id"] integerValue];
-        
         user.title = object[@"title"];
-        
         user.body = object[@"body"];
-        
         [users addObject: user];
-        
     }
-    
     return users;
-    
 }
 
 @end

@@ -13,31 +13,21 @@
 @implementation DataService
 
 + (void)fetchData:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
-    
     NSURL *url = [NSURL URLWithString:@"https://jsonplaceholder.typicode.com/posts"];
-    
     NSURLSession *session = [NSURLSession sharedSession];
-    
-    NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
+    NSURLSessionDataTask *task = [session dataTaskWithURL:url
+                                        completionHandler:^(NSData * _Nullable data,
+                                                            NSURLResponse * _Nullable response,
+                                                            NSError * _Nullable error) {
         if (error) {
-
             failure(error);
-            
             return;
-            
         }
-        
         NSDictionary *objects = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        
         NSArray *users = [User initWithObjects:objects];
-        
         success(users);
-        
     }];
-    
     [task resume];
-
 }
 
 @end
