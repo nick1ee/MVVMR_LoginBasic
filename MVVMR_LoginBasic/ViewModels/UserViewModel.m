@@ -8,6 +8,7 @@
 
 #import "UserViewModel.h"
 #import "DataService.h"
+#import "UserDetailViewModel.h"
 #import <UIKit/UIKit.h>
 
 @interface UserViewModel ()
@@ -52,9 +53,11 @@
     
 }
 
-- (User *)getUserWithIndexPath:(NSIndexPath *)indexPath {
+- (UserDetailViewModel *)getUserWithIndexPath:(NSIndexPath *)indexPath {
     
-    return self.users[indexPath.row];
+    UserDetailViewModel *viewModel = [[UserDetailViewModel alloc] initWithUser:self.users[indexPath.row]];
+    
+    return viewModel;
 
 }
 

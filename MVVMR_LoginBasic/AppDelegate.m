@@ -11,6 +11,7 @@
 
 @interface AppDelegate ()
 
+// TODO: Could AppDelegate own a router?
 @property (strong, nonatomic) Router *router;
 
 @end

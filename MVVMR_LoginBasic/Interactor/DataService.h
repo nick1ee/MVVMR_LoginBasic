@@ -10,6 +10,10 @@
 
 @interface DataService : NSObject
 
+/*
+     There is no difference to use class method or instance method. But if there is any propery will be changed after sending API request, you should use instance method instead of class method to capture those instance variable.
+*/
+
 + (void)fetchData: (void (^)(NSArray *fetchedUsers))success
           failure: (void (^)(NSError *operationError))failure;
 

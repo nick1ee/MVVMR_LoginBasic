@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B81DE0E81FA18BCE00ED1298 /* UserDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B81DE0E71FA18BCE00ED1298 /* UserDetailViewModel.m */; };
 		B864C7531FA0339400154448 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B864C7521FA0339400154448 /* AppDelegate.m */; };
 		B864C75B1FA0339400154448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B864C75A1FA0339400154448 /* Assets.xcassets */; };
 		B864C75E1FA0339400154448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B864C75C1FA0339400154448 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B81DE0E61FA18BCE00ED1298 /* UserDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailViewModel.h; sourceTree = "<group>"; };
+		B81DE0E71FA18BCE00ED1298 /* UserDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewModel.m; sourceTree = "<group>"; };
 		B864C74E1FA0339400154448 /* MVVMR_LoginBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMR_LoginBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B864C7511FA0339400154448 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B864C7521FA0339400154448 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				B864C7721FA042AE00154448 /* LoginViewModel.m */,
 				B864C77A1FA0648400154448 /* UserViewModel.h */,
 				B864C77B1FA0648400154448 /* UserViewModel.m */,
+				B81DE0E61FA18BCE00ED1298 /* UserDetailViewModel.h */,
+				B81DE0E71FA18BCE00ED1298 /* UserDetailViewModel.m */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			files = (
 				B864C77F1FA0655300154448 /* User.m in Sources */,
 				B864C7891FA072B000154448 /* DataService.m in Sources */,
+				B81DE0E81FA18BCE00ED1298 /* UserDetailViewModel.m in Sources */,
 				B864C77C1FA0648400154448 /* UserViewModel.m in Sources */,
 				B864C7831FA066DB00154448 /* UserTableViewCell.m in Sources */,
 				B864C7701FA0377D00154448 /* Router.m in Sources */,

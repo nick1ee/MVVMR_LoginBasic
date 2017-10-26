@@ -7,13 +7,11 @@
 //
 
 #import "UserViewModel.h"
+#import "UserDetailViewModel.h"
 #import <UIKit/UIKit.h>
 
 @interface UserTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *userIdLabel;
-@property (weak, nonatomic) IBOutlet UILabel *idLabel;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
+- (void)configWithViewModel:(UserDetailViewModel *)viewModel;
 
 @end

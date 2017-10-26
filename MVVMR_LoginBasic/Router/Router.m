@@ -24,9 +24,11 @@
     
     self = [super init];
     
-    if (!self) { return nil; }
+    if (self) {
     
-    self.navigationController = inputNavigation;
+        self.navigationController = inputNavigation;
+    
+    }
     
     return self;
 }
@@ -58,7 +60,6 @@
         NSLog(@"Wrong Password!");
         
     }
-    
 }
 
 @end
